@@ -1,0 +1,52 @@
+2023-01-07 15:53:48.078 -05:00 [INF] Now listening on: https://localhost:7079
+2023-01-07 15:53:48.132 -05:00 [INF] Now listening on: http://localhost:5079
+2023-01-07 15:53:48.135 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-07 15:53:48.135 -05:00 [INF] Hosting environment: Development
+2023-01-07 15:53:48.136 -05:00 [INF] Content root path: E:\EVALUACION_TEKTON\WebApiProduct\WebApiProduct\
+2023-01-07 15:53:50.241 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/index.html - -
+2023-01-07 15:53:50.751 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/index.html - - - 200 - text/html;charset=utf-8 511.5240ms
+2023-01-07 15:53:50.771 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - -
+2023-01-07 15:53:50.779 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - - - 200 11995 application/javascript;+charset=utf-8 7.2516ms
+2023-01-07 15:53:50.814 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7079/_vs/browserLink - -
+2023-01-07 15:53:50.877 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7079/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 62.5712ms
+2023-01-07 15:53:50.975 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - -
+2023-01-07 15:53:51.094 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 119.1176ms
+2023-01-07 15:54:22.103 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7079/api/Product/1 - -
+2023-01-07 15:54:22.110 -05:00 [INF] Executing endpoint 'WebApiProduct.Controllers.ProductController.Get (WebApiProduct)'
+2023-01-07 15:54:22.132 -05:00 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Object] Get(Int32) on controller WebApiProduct.Controllers.ProductController (WebApiProduct).
+2023-01-07 15:54:22.887 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-01-07 15:54:23.017 -05:00 [INF] Entity Framework Core 6.0.12 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.12' with options: None
+2023-01-07 15:54:24.215 -05:00 [INF] Executed DbCommand (121ms) [Parameters=[@__productId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[Description], [p].[Name], [p].[Price], [p].[Status], [p].[Stock]
+FROM [products] AS [p]
+WHERE [p].[ProductId] = @__productId_0
+2023-01-07 15:54:24.269 -05:00 [INF] Executing ObjectResult, writing value of type 'WebApiProduct.Dtos.ResponseDto'.
+2023-01-07 15:54:24.278 -05:00 [INF] Executed action WebApiProduct.Controllers.ProductController.Get (WebApiProduct) in 2141.1168ms
+2023-01-07 15:54:24.280 -05:00 [INF] Executed endpoint 'WebApiProduct.Controllers.ProductController.Get (WebApiProduct)'
+2023-01-07 15:54:24.286 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7079/api/Product/1 - - - 200 - application/json;+charset=utf-8 2183.0323ms
+2023-01-07 16:37:48.706 -05:00 [INF] Now listening on: https://localhost:7079
+2023-01-07 16:37:48.761 -05:00 [INF] Now listening on: http://localhost:5079
+2023-01-07 16:37:48.765 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-07 16:37:48.766 -05:00 [INF] Hosting environment: Development
+2023-01-07 16:37:48.767 -05:00 [INF] Content root path: E:\EVALUACION_TEKTON\WebApiProduct\WebApiProduct\
+2023-01-07 16:37:49.515 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/index.html - -
+2023-01-07 16:37:49.731 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - -
+2023-01-07 16:37:49.735 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/index.html - - - 200 - text/html;charset=utf-8 221.3327ms
+2023-01-07 16:37:49.735 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - - - 200 11995 application/javascript;+charset=utf-8 3.8987ms
+2023-01-07 16:37:49.756 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7079/_vs/browserLink - -
+2023-01-07 16:37:49.771 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7079/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.2292ms
+2023-01-07 16:37:49.839 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - -
+2023-01-07 16:37:49.925 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7079/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 86.2866ms
+2023-01-07 16:37:58.744 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7079/api/Product/1 - -
+2023-01-07 16:37:58.750 -05:00 [INF] Executing endpoint 'WebApiProduct.Controllers.ProductController.Get (WebApiProduct)'
+2023-01-07 16:37:58.771 -05:00 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Object] Get(Int32) on controller WebApiProduct.Controllers.ProductController (WebApiProduct).
+2023-01-07 16:37:59.312 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-01-07 16:37:59.425 -05:00 [INF] Entity Framework Core 6.0.12 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.12' with options: None
+2023-01-07 16:38:00.212 -05:00 [INF] Executed DbCommand (59ms) [Parameters=[@__productId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[Description], [p].[Name], [p].[Price], [p].[Status], [p].[Stock]
+FROM [products] AS [p]
+WHERE [p].[ProductId] = @__productId_0
+2023-01-07 16:38:00.303 -05:00 [INF] Executing ObjectResult, writing value of type 'WebApiProduct.Dtos.ResponseDto'.
+2023-01-07 16:38:00.314 -05:00 [INF] Executed action WebApiProduct.Controllers.ProductController.Get (WebApiProduct) in 1538.3097ms
+2023-01-07 16:38:00.316 -05:00 [INF] Executed endpoint 'WebApiProduct.Controllers.ProductController.Get (WebApiProduct)'
+2023-01-07 16:38:00.324 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7079/api/Product/1 - - - 200 - application/json;+charset=utf-8 1579.1648ms
